@@ -10,6 +10,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <dirent.h>
+#include <string.h>
 
 int main(int argc, char* argv[])
 {
@@ -51,4 +52,5 @@ int main(int argc, char* argv[])
         printf("The option you provided for ls was invalid.\n-l for detailed file information\n-i for the file inode\n");
     }
     closedir(mydir);
+    return 0;
 }
